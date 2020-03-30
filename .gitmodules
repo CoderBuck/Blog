@@ -2,6 +2,6 @@
 	path = themes/hermit
 	url = https://github.com/Track3/hermit.git
 
-[submodule "themes/hermit"]
+[submodule "public"]
 	path = public
 	url = https://github.com/CoderBuck/coderbuck.github.io.git
