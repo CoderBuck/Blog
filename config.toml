@@ -1,6 +1,6 @@
 baseURL = "https://coderbuck.github.io"
 languageCode = "zh-cn"
-defaultContentLanguage = "cn"
+defaultContentLanguage = "zh-cn"
 title = "Buck's Bolg"
 theme = "yinyang"
 
