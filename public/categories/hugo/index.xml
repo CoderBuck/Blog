@@ -21,7 +21,7 @@
 Start the Hugo server hugo server -D 启动后可以本地预览
 Build static pages hugo -D 自用主题 极简主义 yinyang
 构建脚本 deploy.sh
-#!/bin/sh # If a command fails then the deploy stops # set -e printf &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m\n&amp;quot; # Build the project. hugo -D # if using a theme, replace with `hugo -t &amp;lt;YOURTHEME&amp;gt;` # Commit changes. msg=&amp;quot;rebuilding site $(date)&amp;quot; if [ -n &amp;quot;$*&amp;quot; ]; then msg=&amp;quot;$*&amp;quot; fi # Add changes to git.</description>
+#!/bin/sh # If a command fails then the deploy stops # set -e printf &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m\n&amp;quot; # Build the project. hugo -D # if using a theme, replace with `hugo -t &amp;lt;YOURTHEME&amp;gt;` # Commit changes. msg=&amp;quot;rebuilding site $(date)&amp;quot; if [ -n &amp;quot;$*&amp;quot; ]; then msg=&amp;quot;$*&amp;quot; fi # Go To Public folder cd public # Add changes to git.</description>
     </item>
     
   </channel>
