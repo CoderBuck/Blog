@@ -21,7 +21,7 @@
       "articleSection" : "posts",
       "name" : "Publish Library to Jitpack",
       "headline" : "Publish Library to Jitpack",
-      "description" : "jitpack 早有耳闻，但是因为之前都是把库发布到 jcenter，所以一直没有碰过 jitpack。最近也是因为发布到 jcenter 遇到了问题，然后才转了 jitpack。用了后就感觉很爽。\njcenter 遇到了啥问题 一般来说发布的jcenter都会用这个插件 com.novoda.bintray-release 。自己新建项目(viewbinding-ktx)gradle版本默认是6.0以上了，然后这个插件就 bug 了，不支持gradle 6.0\u002b ，导致我发布不了。然后我又不想回退到5.0 ，就去试 jitpack 了。\njitpack ！！！ 我对 jitpack 最初的坏印象很简单，就是使用发布到 jitpack 的库，你必须在项目里手动把 jitpack 的仓库加进去:maven { url \u0027https:\/\/jitpack.io\u0027 } ,而jcenter 创建项目的时候自动就配置了，而且还是带别名的jcenter()。但是这不怪 jitpack \u0026hellip;\n发布到 jitpack 的过程真的是超级简单\n添加插件 android library 添加 android-maven 插件\n\/\/ root classpath \u0027com.github.dcendents:android-maven-gradle-plugin:2.1\u0027 \/\/ module apply plugin: \u0027com.github.dcendents.android-maven\u0027  注意：android-maven 现在维护者不推荐使用了，因为现在 android 插件已经默认提供了 aar 工件的支持。 但是现在还是用 android-maven 更方便，但是 android-maven 相对来说要过时了\u0026hellip;\n java library 添加 maven 插件",
+      "description" : "之前都是把库发布到 jcenter，所以一直没有碰过 jitpack。最近也是因为发布到 jcenter 遇到了问题，然后才转了 jitpack。用了后就感觉很爽。\njcenter 遇到了啥问题 一般来说发布的jcenter都会用这个插件 com.novoda.bintray-release 。自己新建项目(viewbinding-ktx)gradle版本默认是6.0以上了，然后这个插件就 bug 了，不支持gradle 6.0\u002b ，导致我发布不了。然后我又不想回退到5.0 ，就去试 jitpack 了。\njitpack ！！！ 我对 jitpack 最初的坏印象很简单，就是使用发布到 jitpack 的库，你必须在项目里手动把 jitpack 的仓库加进去:maven { url \u0027https:\/\/jitpack.io\u0027 } ,而jcenter 创建项目的时候自动就配置了，而且还是带别名的jcenter()。但是这不怪 jitpack \u0026hellip;\n发布到 jitpack 的过程真的是超级简单\n添加插件 android library 添加 android-maven 插件\n\/\/ root classpath \u0027com.github.dcendents:android-maven-gradle-plugin:2.1\u0027 \/\/ module apply plugin: \u0027com.github.dcendents.android-maven\u0027  注意：android-maven 现在维护者不推荐使用了，因为现在 android 插件已经默认提供了 aar 工件的支持。 但是现在还是用 android-maven 更方便，但是 android-maven 相对来说要过时了\u0026hellip;\n java library 添加 maven 插件",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -32,20 +32,20 @@
       "datePublished": "2020-07-11 22:33:05 \u002b0800 \u002b08",
       "dateModified" : "2020-07-11 22:33:05 \u002b0800 \u002b08",
       "url" : "https:\/\/coderbuck.github.io\/posts\/publish-library-to-jitpack\/",
-      "keywords" : [ "untagged", ]
+      "keywords" : [  ]
   }
 </script>
 <title>Publish Library to Jitpack - Buck&#39;s Bolg</title>
   <meta property="og:title" content="Publish Library to Jitpack - Buck&#39;s Bolg" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="jitpack 早有耳闻，但是因为之前都是把库发布到 jcenter，所以一直没有碰过 jitpack。最近也是因为发布到 jcenter 遇到了问题，然后才转了 jitpack。用了后就感觉很爽。
+  <meta property="og:description" content="之前都是把库发布到 jcenter，所以一直没有碰过 jitpack。最近也是因为发布到 jcenter 遇到了问题，然后才转了 jitpack。用了后就感觉很爽。
 jcenter 遇到了啥问题 一般来说发布的jcenter都会用这个插件 com.novoda.bintray-release 。自己新建项目(viewbinding-ktx)gradle版本默认是6.0以上了，然后这个插件就 bug 了，不支持gradle 6.0&#43; ，导致我发布不了。然后我又不想回退到5.0 ，就去试 jitpack 了。
 jitpack ！！！ 我对 jitpack 最初的坏印象很简单，就是使用发布到 jitpack 的库，你必须在项目里手动把 jitpack 的仓库加进去:maven { url &#39;https://jitpack.io&#39; } ,而jcenter 创建项目的时候自动就配置了，而且还是带别名的jcenter()。但是这不怪 jitpack &hellip;
 发布到 jitpack 的过程真的是超级简单
 添加插件 android library 添加 android-maven 插件
 // root classpath &#39;com.github.dcendents:android-maven-gradle-plugin:2.1&#39; // module apply plugin: &#39;com.github.dcendents.android-maven&#39;  注意：android-maven 现在维护者不推荐使用了，因为现在 android 插件已经默认提供了 aar 工件的支持。 但是现在还是用 android-maven 更方便，但是 android-maven 相对来说要过时了&hellip;
  java library 添加 maven 插件" />
-  <meta name="description" content="jitpack 早有耳闻，但是因为之前都是把库发布到 jcenter，所以一直没有碰过 jitpack。最近也是因为发布到 jcenter 遇到了问题，然后才转了 jitpack。用了后就感觉很爽。
+  <meta name="description" content="之前都是把库发布到 jcenter，所以一直没有碰过 jitpack。最近也是因为发布到 jcenter 遇到了问题，然后才转了 jitpack。用了后就感觉很爽。
 jcenter 遇到了啥问题 一般来说发布的jcenter都会用这个插件 com.novoda.bintray-release 。自己新建项目(viewbinding-ktx)gradle版本默认是6.0以上了，然后这个插件就 bug 了，不支持gradle 6.0&#43; ，导致我发布不了。然后我又不想回退到5.0 ，就去试 jitpack 了。
 jitpack ！！！ 我对 jitpack 最初的坏印象很简单，就是使用发布到 jitpack 的库，你必须在项目里手动把 jitpack 的仓库加进去:maven { url &#39;https://jitpack.io&#39; } ,而jcenter 创建项目的时候自动就配置了，而且还是带别名的jcenter()。但是这不怪 jitpack &hellip;
 发布到 jitpack 的过程真的是超级简单
@@ -109,7 +109,7 @@ jitpack ！！！ 我对 jitpack 最初的坏印象很简单，就是使用发�
 
         <div class="post-content markdown-body">
           
-          <p>jitpack 早有耳闻，但是因为之前都是把库发布到 jcenter，所以一直没有碰过 jitpack。最近也是因为发布到 jcenter 遇到了问题，然后才转了 jitpack。用了后就感觉很爽。</p>
+          <p>之前都是把库发布到 jcenter，所以一直没有碰过 jitpack。最近也是因为发布到 jcenter 遇到了问题，然后才转了 jitpack。用了后就感觉很爽。</p>
 <h2 id="jcenter-遇到了啥问题">jcenter 遇到了啥问题</h2>
 <p>一般来说发布的jcenter都会用这个插件 <code>com.novoda.bintray-release</code> 。自己新建项目(<a href="https://github.com/CoderBuck/viewbinding-ktx">viewbinding-ktx</a>)gradle版本默认是6.0以上了，然后这个插件就 <a href="https://github.com/novoda/bintray-release/issues/298">bug</a> 了，不支持gradle 6.0+ ，导致我发布不了。然后我又不想回退到5.0 ，就去试 jitpack 了。</p>
 <h2 id="jitpack-">jitpack ！！！</h2>
@@ -146,8 +146,8 @@ apply plugin: 'com.github.dcendents.android-maven'
 </ol>
 <p>比如：https://github.com/CoderBuck/jitpack  这个项目里有两个 library，lib-aar 和 lib-jar。因为他们在同一个项目里，github release 的时候发布的是整体的版本。所以每次发布到 jitpack 的时候，他们两个都是同时发布的，版本号都是相同的，不能单独发布。而且依赖的名字也会有区别，</p>
 <pre><code>implementation 'com.github.coderbuck:jitpack:1.0.0  		// lib-aar + lib-jar
-implementation 'com.github.coderbuckjitpack:lib-aar:1.0.0	// lib-aar
-implementation 'com.github.coderbuckjitpack:lib-jar:1.0.0	// lib-jar
+implementation 'com.github.coderbuck.jitpack:lib-aar:1.0.0	// lib-aar
+implementation 'com.github.coderbuck.jitpack:lib-jar:1.0.0	// lib-jar
 </code></pre><p>这就可能会导致一些问题，
 1.想要不同版本怎么办？&ndash;再新建一个仓库吧
 2.之前项目是一个 library，后面又新增了一个 library，这会导致依赖的名字变化，跟之前版本不符。&ndash;尽量不要这么做</p>
@@ -180,6 +180,12 @@ com/github/CoderBuck/viewbinding-ktx/1.0.0/viewbinding-ktx-1.0.0.pom.sha1
         <div class="row middle-xs">
           <div class="col-xs-12">
             
+            <div class="post-category">
+              <a href="//categories/jitpack/">
+                jitpack
+              </a>
+            </div>
+            
           </div>
         </div>
         <div class="row">
@@ -190,15 +196,6 @@ com/github/CoderBuck/viewbinding-ktx/1.0.0/viewbinding-ktx-1.0.0.pom.sha1
 
         
         
-
-<div class="releated-content">
-  <h3>Related Posts</h3>
-  <ul>
-    
-    <li><a href="/posts/hello-hugo/">Hello Hugo</a></li>
-    
-  </ul>
-</div>
 
         
         

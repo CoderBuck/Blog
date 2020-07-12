@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Buck&#39;s Bolg</title>
-    <link>https://coderbuck.github.io/</link>
-    <description>Recent content on Buck&#39;s Bolg</description>
+    <title>jitpack on Buck&#39;s Bolg</title>
+    <link>https://coderbuck.github.io/categories/jitpack/</link>
+    <description>Recent content in jitpack on Buck&#39;s Bolg</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 11 Jul 2020 22:33:05 +0800</lastBuildDate>
     
-	<atom:link href="https://coderbuck.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://coderbuck.github.io/categories/jitpack/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -24,19 +24,6 @@ jitpack ！！！ 我对 jitpack 最初的坏印象很简单，就是使用发�
 添加插件 android library 添加 android-maven 插件
 // root classpath &#39;com.github.dcendents:android-maven-gradle-plugin:2.1&#39; // module apply plugin: &#39;com.github.dcendents.android-maven&#39;  注意：android-maven 现在维护者不推荐使用了，因为现在 android 插件已经默认提供了 aar 工件的支持。 但是现在还是用 android-maven 更方便，但是 android-maven 相对来说要过时了&amp;hellip;
  java library 添加 maven 插件</description>
-    </item>
-    
-    <item>
-      <title>Hello Hugo</title>
-      <link>https://coderbuck.github.io/posts/hello-hugo/</link>
-      <pubDate>Sat, 11 Jul 2020 22:17:12 +0800</pubDate>
-      
-      <guid>https://coderbuck.github.io/posts/hello-hugo/</guid>
-      <description>新建文章 hugo new posts/my-first-post.md 或者直接在 content/posts目录手动创建my-first-post.md
-Start the Hugo server hugo server -D 启动后可以本地预览
-Build static pages hugo -D 自用主题 极简主义 yinyang
-构建脚本 deploy.sh
-#!/bin/sh # If a command fails then the deploy stops # set -e printf &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m\n&amp;quot; # Build the project. hugo -D # if using a theme, replace with `hugo -t &amp;lt;YOURTHEME&amp;gt;` # Commit changes. msg=&amp;quot;rebuilding site $(date)&amp;quot; if [ -n &amp;quot;$*&amp;quot; ]; then msg=&amp;quot;$*&amp;quot; fi # Add changes to git.</description>
     </item>
     
   </channel>

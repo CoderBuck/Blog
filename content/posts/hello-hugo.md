@@ -1,11 +1,8 @@
 ---
 title: "Hello Hugo"
 date: 2020-07-11T22:17:12+08:00
-draft: true
-toc: false
-images:
-tags: 
-  - untagged
+draft: false
+categories: ['hugo']
 ---
 
 ## 新建文章
@@ -29,5 +26,48 @@ hugo server -D
 hugo -D
 ```
 
+## 自用主题
 
-123
+极简主义 [yinyang](https://github.com/joway/hugo-theme-yinyang/tree/a91daf5af446687010b969b902a8bf497918a18f)
+
+## 构建脚本
+
+deploy.sh
+```
+#!/bin/sh
+
+# If a command fails then the deploy stops
+
+# set -e
+
+printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
+
+# Build the project.
+hugo -D # if using a theme, replace with `hugo -t <YOURTHEME>`
+
+# Commit changes.
+msg="rebuilding site $(date)"
+if [ -n "$*" ]; then
+	msg="$*"
+fi
+
+# Add changes to git.
+git add .
+
+git commit -m "$msg"
+
+# Push source and build repos.
+git push origin master
+
+# Go To Public folder
+cd public
+
+# Add changes to git.
+git add .
+
+git commit -m "$msg"
+
+# Push source and build repos.
+git push origin master
+```
+

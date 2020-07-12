@@ -17,7 +17,7 @@
       <pubDate>Sat, 11 Jul 2020 22:33:05 +0800</pubDate>
       
       <guid>https://coderbuck.github.io/posts/publish-library-to-jitpack/</guid>
-      <description>jitpack 早有耳闻，但是因为之前都是把库发布到 jcenter，所以一直没有碰过 jitpack。最近也是因为发布到 jcenter 遇到了问题，然后才转了 jitpack。用了后就感觉很爽。
+      <description>之前都是把库发布到 jcenter，所以一直没有碰过 jitpack。最近也是因为发布到 jcenter 遇到了问题，然后才转了 jitpack。用了后就感觉很爽。
 jcenter 遇到了啥问题 一般来说发布的jcenter都会用这个插件 com.novoda.bintray-release 。自己新建项目(viewbinding-ktx)gradle版本默认是6.0以上了，然后这个插件就 bug 了，不支持gradle 6.0+ ，导致我发布不了。然后我又不想回退到5.0 ，就去试 jitpack 了。
 jitpack ！！！ 我对 jitpack 最初的坏印象很简单，就是使用发布到 jitpack 的库，你必须在项目里手动把 jitpack 的仓库加进去:maven { url &#39;https://jitpack.io&#39; } ,而jcenter 创建项目的时候自动就配置了，而且还是带别名的jcenter()。但是这不怪 jitpack &amp;hellip;
 发布到 jitpack 的过程真的是超级简单
@@ -34,7 +34,9 @@ jitpack ！！！ 我对 jitpack 最初的坏印象很简单，就是使用发�
       <guid>https://coderbuck.github.io/posts/hello-hugo/</guid>
       <description>新建文章 hugo new posts/my-first-post.md 或者直接在 content/posts目录手动创建my-first-post.md
 Start the Hugo server hugo server -D 启动后可以本地预览
-Build static pages hugo -D 123</description>
+Build static pages hugo -D 自用主题 极简主义 yinyang
+构建脚本 deploy.sh
+#!/bin/sh # If a command fails then the deploy stops # set -e printf &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m\n&amp;quot; # Build the project. hugo -D # if using a theme, replace with `hugo -t &amp;lt;YOURTHEME&amp;gt;` # Commit changes. msg=&amp;quot;rebuilding site $(date)&amp;quot; if [ -n &amp;quot;$*&amp;quot; ]; then msg=&amp;quot;$*&amp;quot; fi # Add changes to git.</description>
     </item>
     
   </channel>

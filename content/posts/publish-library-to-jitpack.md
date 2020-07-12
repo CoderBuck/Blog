@@ -4,11 +4,10 @@ date: 2020-07-11T22:33:05+08:00
 draft: true
 toc: false
 images:
-tags: 
-  - untagged
+categories: ['jitpack']
 ---
 
-jitpack 早有耳闻，但是因为之前都是把库发布到 jcenter，所以一直没有碰过 jitpack。最近也是因为发布到 jcenter 遇到了问题，然后才转了 jitpack。用了后就感觉很爽。
+之前都是把库发布到 jcenter，所以一直没有碰过 jitpack。最近也是因为发布到 jcenter 遇到了问题，然后才转了 jitpack。用了后就感觉很爽。
 
 ## jcenter 遇到了啥问题
 
@@ -63,8 +62,8 @@ apply plugin: 'maven'
 
 ```
 implementation 'com.github.coderbuck:jitpack:1.0.0  		// lib-aar + lib-jar
-implementation 'com.github.coderbuckjitpack:lib-aar:1.0.0	// lib-aar
-implementation 'com.github.coderbuckjitpack:lib-jar:1.0.0	// lib-jar
+implementation 'com.github.coderbuck.jitpack:lib-aar:1.0.0	// lib-aar
+implementation 'com.github.coderbuck.jitpack:lib-jar:1.0.0	// lib-jar
 ```
 这就可能会导致一些问题，
 1.想要不同版本怎么办？--再新建一个仓库吧
