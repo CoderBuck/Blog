@@ -4,4 +4,5 @@
 
 [submodule "public"]
 	path = public
-	url = https://github.com/CoderBuck/coderbuck.github.io.git
+	url = git@github.com:CoderBuck/coderbuck.github.io.git
+	branch = master
