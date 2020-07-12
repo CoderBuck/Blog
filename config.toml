@@ -21,3 +21,7 @@ theme = "yinyang"
   [[params.socials]]
     name = "Twitter"
     link = "https://twitter.com/D20170806"
+
+#  [[params.socials]]
+#    name = "About"
+#    link = "/posts/about"  
